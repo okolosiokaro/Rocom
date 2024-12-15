@@ -160,7 +160,7 @@ nav .mobile{
   display: none;
 }
 
-.menu, .menu p {
+.menu{
   display: visible;
   position: absolute;
   top: 0.1rem;
