@@ -8,28 +8,44 @@
 </head>
 <body>
     <header class="">
-        <nav class="container">
-            <a href="/index.html" class="btn-float"><h3 class="text-accent">ROCOM</h3></a>
-            <div class="mobile split">
-                <ul class="split">
-                    <li><a href="#" class="btn-float">Home</a></li>
-                    <li><a href="#" class="btn-float">Internet Services</a></li>
-                    <li><a href="#" class="btn-float">Network Components</a></li>
-                    <li><a href="#" class="btn-float">Support</a></li>
-                    <li><a href="#" class="btn-float">About Us</a></li>
-                    <li><a href="#" class="btn-float">Contact Us</a></li>
-                </ul>
-                <div class="split">
-                    <input type="search" placeholder="search products" id=""/>
-                    <input type="button" value="Search" class=""/>
-                </div>
-            </div>
+            <!-- Navbar starts here -->
+  <nav class="navbar container">
+    <!-- Company logo -->
+    <div class="logo">ROCOM</div>
 
-            <div class="menu">
-                <a href="/" class="btn-float"><p>&#9776;</p></a>
-                <a href="/" class="btn-float"><p>&#10005;</p></a>
-            </div>
-        </nav>
+    <!-- Navigation links -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Internet Services</a>
+      <a href="#">Network Components</a>
+      <a href="#">Support</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+
+    <!-- Hamburger menu (visible on mobile) -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- Dropdown menu (appears on mobile when hamburger is clicked) -->
+  <div class="dropdown-menu" id="dropdown">
+    <a href="#">Home</a>
+    <a href="#">Internet Services</a>
+    <a href="#">Network Components</a>
+    <a href="#">Support</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <input type="text" placeholder="Search...">
+  </div>
     </header>
     <section id="hero">
         <div class="container">
@@ -50,56 +66,84 @@
                 </div>
                 <div class="network">
                     <p class="">featured Products</p>
-                    <ul class="carousel split top">
-                        <li class="products flow-content">
-                            <img src="/src/chargemobile.jpg" alt="">
-                            <h3>Chargemobile</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, id.</p>
-                            <div class="ratings">
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
+                    <div class="carousel-container">
+                        <div class="carousel" id="carousel">
+                                <!-- Product 1 -->
+                            <div class="product flow-content">
+                                <img src="/src/tplink router.jpg" alt="Product 1">
+                                <div class="product-name">Tplink Router</div>
+                                <div class="product-rating">★★★★☆</div>
+                                <div class="product-price">$10.00</div>
                             </div>
-                        </li>
-                        <li class="products flow-content">
-                            <img src="/src/extender.jpg" alt="">
-                            <h3>Tplink Extender</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, id.</p>
-                            <div class="ratings">
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
+                            <!-- Product 2 -->
+                            <div class="product flow-content">
+                                <img src="/src/extender.jpg" alt="Product 2">
+                                <div class="product-name">Range Extender</div>
+                                <div class="product-rating">★★★★★</div>
+                                <div class="product-price">$15.00</div>
                             </div>
-                        </li>
-                        <li class="products flow-content">
-                            <img src="/src/masriva.jpg" alt="">
-                            <h3>Masriva Powerbank</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, id.</p>
-                            <div class="ratings">
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
+                            <!-- Product 3 -->
+                            <div class="product flow-content">
+                                <img src="/src/masriva.jpg" alt="Product 3">
+                                <div class="product-name">Marsriva Powerbank</div>
+                                <div class="product-rating">★★★☆☆</div>
+                                <div class="product-price">$20.00</div>
                             </div>
-                        </li>
-                        <li class="products flow-content">
-                            <img src="/src/ske.jpg" alt="">
-                            <h3>SKE Powerbank</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, id.</p>
-                            <div class="ratings">
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
-                                <span>+</span>
+                            <!-- product 4 -->
+                            <div class="product flow-content">
+                                <img src="/src/olax.jpg" alt="Product 4">
+                                <div class="product-name">Olax Powerbank</div>
+                                <div class="product-rating">★★★★☆</div>
+                                <div class="product-price">$25.00</div>
                             </div>
-                        </li>
-                    </ul>
+                            <!-- product 5 -->
+                             <div class="product flow-content">
+                                <img src="/src/ske.jpg" alt="Product 5">
+                                <div class="product-name">SKE 1000mAh</div>
+                                <div class="product-rating">★★★★☆</div>
+                                <div class="product-price">$30.00</div>
+                             </div>
+                             <!-- product 6 -->
+                              <div class="product flow-content">
+                                <img src="/src/ske2.jpg" alt="Product 6">
+                                <div class="product-name">SKE 20000mAh</div>
+                                <div class="product-rating">★★★☆☆</div>
+                                <div class="product-price">$35.00</div>
+                              </div>
+                              <!-- product  7 -->
+                               <div class="product flow-content">
+                                <img src="/src/masriva3.jpg" alt="Product 7">
+                                <div class="product-name">Marsriva 16000mAh</div>
+                                <div class="product-rating">★★★☆☆</div>
+                                <div class="product-price">$35.00</div>
+                               </div>
+                               <!-- product 8 -->
+                                <div class="product flow-content">
+                                    <img src="/src/starlink.jpg" alt="Product 8">
+                                    <div class="product-name">Starlink</div>
+                                    <div class="product-rating">★★★☆☆</div>
+                                    <div class="product-price">$35.00</div>
+                                </div>
+                              <!-- product 9 -->
+                                <div class="product flow-content">
+                                    <img src="/src/switch.jpg" alt="Product 9">
+                                    <div class="product-name">Tplink Switch</div>
+                                    <div class="product-rating">★★★☆☆</div>
+                                    <div class="product-price">$35.00</div>
+                                </div>
+                             <!-- product 10 -->
+                                <div class="product flow-content">
+                                <img src="/src/chargemobile.jpg" alt="Product 10">
+                                <div class="product-name">Charge Mobile</div>
+                                <div class="product-rating">★★★☆☆</div>
+                                <div class="product-price">$35.00</div>
+                                </div>
+                        </div>
+                    <!-- Carousel controls -->
+                    <div class="carousel-controls">
+                        <button class="prev" onclick="scrollCarousel(-1)">‹</button>
+                        <button class="next" onclick="scrollCarousel(1)">›</button>
+                    </div>
                 </div>
                         <form action="" method="post" class="split">
                             <p>Choose Category</p>
@@ -264,4 +308,5 @@
         </div>
     </section>
 </body>
+<script src="/script.js"></script>
 </html>
